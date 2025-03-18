@@ -33,7 +33,7 @@ const utilisateur = ref(null);
 onMounted(async()=>{
     const token = localStorage.getItem("token")
     const { data, error } = await useFetch(
-      "https://booking.openintech.app/api/user",{
+      "https://booking.openintech.app/api/me",{
         headers: {
           "Content-Type": "application/json",
           "Shop-Id": "072f100a-9009-4e5c-98a2-007f2f24cf11",
